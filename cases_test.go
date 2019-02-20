@@ -14,7 +14,7 @@ var enqueueTestCases = []testCase{
 		input:       8,
 		inputQ:      intQueue{[]int{3, 5, 3, 6}},
 		expected:    5,
-		expectedQ:   intQueue{[]int{3, 5, 3, 6, 8}},
+		expectedQ:   intQueue{[]int{8, 3, 5, 3, 6}},
 	},
 }
 

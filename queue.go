@@ -15,7 +15,7 @@ type intQueue struct {
 }
 
 func (q *intQueue) enqueue(i int) (int, error) {
-	(*q).data = append((*q).data, i)
+	(*q).data = append([]int{i}, (*q).data...)
 	return len((*q).data), nil
 }
 
